@@ -8,6 +8,10 @@
  */
 
 #import "AppDelegate.h"
+#import "RNCrashes.h"
+
+#import "RNAnalytics.h"
+
 
 #import "RCTRootView.h"
 #import "SplashScreen.h"
@@ -16,6 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   NSURL *jsCodeLocation;
+
+[RNCrashes registerWithCrashDelegate: [[RNCrashesDelegateAlwaysSend alloc] init]];
+
+[RNAnalytics registerWithInitiallyEnabled:true];
 
   /**
    * Loading JavaScript code - uncomment the one you want.

@@ -1,4 +1,6 @@
 <resources>
+    <string moduleConfig="true" name="mobilecenterCrashes_whenToSendCrashes">ALWAYS_SEND</string>
+    <string moduleConfig="true" name="mobilecenterAnalytics_whenToEnableAnalytics">ALWAYS_SEND</string>
 
     <string name="app_name">GitHub Popular</string>
 </resources>
